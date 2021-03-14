@@ -1,0 +1,43 @@
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #bbb;
+}
+
+.heptagon {
+	position: absolute;
+	top: 20vw;
+	left: 45vw;
+
+	width: 5em;
+	height: 5em;
+	
+	border-left: 3em solid transparent;
+	border-right: 3em solid transparent;
+	border-top: 5em solid #f0950d;
+}
+.heptagon::before {
+	position: absolute;
+	right: -0.45em;
+	top: -12em;
+
+	content: '';
+	border-left: 3em solid transparent;
+	border-right: 3em solid transparent;
+	border-bottom: 2em solid #f0950d;
+}
+.heptagon::after {
+	position: absolute;
+	top: -12em;
+	right: -3em;
+	
+	content: '';
+	width: 6em;
+	height: 2em;
+
+	border-left: 2.5em solid transparent;
+	border-right: 2.5em solid transparent;
+	border-bottom: 5em solid #f0950d;
+	
+}
