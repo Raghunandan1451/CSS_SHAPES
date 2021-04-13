@@ -1,0 +1,38 @@
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #888;
+	padding: 10em;
+}
+
+.octagon {
+	width: 15em;
+	height: 15em;
+	background-color: #fad072;
+	position: relative;
+}
+
+.octagon::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 9em;
+	height: 0;
+	border-bottom: 3em solid #fad072;
+	border-right: 3em solid #888;
+	border-left: 3em solid #888;
+}
+
+.octagon::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 9em;
+	height: 0;
+	border-top: 3em solid #fad072;
+	border-right: 3em solid #888;
+	border-left: 3em solid #888;
+}
